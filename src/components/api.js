@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiBaseUrl = `http://localhost:7000`
+const apiBaseUrl = `https://itemsserver.onrender.com`
 
 const api = axios.create({
     baseURL:apiBaseUrl,
