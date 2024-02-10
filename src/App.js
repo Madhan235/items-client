@@ -11,6 +11,7 @@ import BarChart from './components/BarChart';
 import ItemsQuantity from './components/ItemsQuantity';
 
 import { Chart as ChartJS} from "chart.js/auto";
+import Header from './components/Header';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
 
      <Route path='/bar_chart_drugs_usage' element={<BarChart/>}/>
 
-      
+      <Route path='*' element={<Header />}/>
      </Routes>
      
   );
