@@ -13,6 +13,9 @@ header {
    font-weight: bold;
    
 } 
+body{
+  max-width: 100%;
+}
 
 main{
   min-height: 90vh;
@@ -192,7 +195,7 @@ img{
   justify-items: center; /* Center items horizontally */
   align-items: center; 
  } 
-  
+
 }
 
 @media screen and (min-width:1000px) {
@@ -207,5 +210,13 @@ img{
   justify-items: center; /* Center items horizontally */
   align-items: center; 
  }  
+ .charts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  div{
+    width: 100%;
+  }
+ }
 }
  

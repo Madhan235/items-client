@@ -131,6 +131,7 @@ const Home = () => {
             </Dropdown>
 
             <section className="charts">
+              <div>
               <Line
                 data={{
                   labels: dieselData?.map((item) => item.label),
@@ -174,7 +175,9 @@ const Home = () => {
                   },
                 }}
               />
+                </div>
 
+                <div>
               <Line
                 data={{
                   labels: goldData.map((item) => item.label),
@@ -209,6 +212,7 @@ const Home = () => {
                   },
                 }}
               />
+              </div>
             </section>
             </>
             <a href="" style={{textDecoration:'none',color:"black"}}><section className="ads">

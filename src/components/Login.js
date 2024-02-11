@@ -32,8 +32,7 @@ const Login = () => {
       const user = {
           email,password
       }
-      console.log(email,password);
-      console.log(user);
+      
       console.log("36", "before response")
       const response = await api.post("/login",user)
        console.log("36", "after response")
