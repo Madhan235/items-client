@@ -32,8 +32,9 @@ const Login = () => {
       const user = {
           email,password
       }
+      console.log("36", "before response")
       const response = await api.post("/login",user)
-       
+       console.log("36", "after response")
       localStorage.setItem("token",JSON.stringify(response?.data.token));
 
       localStorage.setItem("name",response?.data.name)
@@ -44,7 +45,7 @@ setPassword("");
 navigate("/home_about_oil_price");
 
     } catch (error) {
-      console.error(error)
+      console.error(error.message)
       if(error.response){
         setError(error.response?.data)
       } else{
