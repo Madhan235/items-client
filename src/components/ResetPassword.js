@@ -23,7 +23,7 @@ const ResetPassword = () => {
 
   const navigateToHome = () => {
     setTimeout(()=>{
-      navigate("/home_about_oil_price");
+      navigate("/login");
     },2000)
   }
 
