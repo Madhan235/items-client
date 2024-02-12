@@ -89,7 +89,7 @@ const handleQuantityChange = async (e)=>{
         e.preventDefault();
         const selectedData = {item:item,name:selectedOption,value:value};
  const response = await api.post("/change_quantity",selectedData);
- console.log(response.data)
+  setValue(0);
  setReresh(!refresh);
     } catch (error) {
         console.log(error);
